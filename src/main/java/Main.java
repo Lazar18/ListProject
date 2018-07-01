@@ -7,6 +7,9 @@ public class Main {
     public static void main(String[] args) {
         logger.error("TEST");
 
+        // tworzymy własną listę
+        // 1. dodajemy do niej wartości - dni tygodnia
+
         MyList myList = new MyListImpl();
         myList.add("poniedziałek");
         myList.add("wtorek");
@@ -16,10 +19,16 @@ public class Main {
         myList.add("sobota");
         myList.add("niedziela");
 
-        // tworzymy własną listę
-        // 1. dodajemy do niej wartości - dni tygodnia
         // 2. wyświatlamy wszystkie elementy z listy
+
+        logger.error(myList.returnListAsString());
+
         // 3. zwracamy rozmiar listy
+
+        logger.error("size {}", (myList.getListSize()));
+
+
+
         // 4. usuwamy element z listy
     }
 }
