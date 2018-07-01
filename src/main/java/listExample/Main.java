@@ -1,3 +1,5 @@
+package listExample;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,16 +21,25 @@ public class Main {
         myList.add("sobota");
         myList.add("niedziela");
 
+
         // 2. wyświatlamy wszystkie elementy z listy
 
-        logger.error(myList.returnListAsString());
+        logger.info(myList.returnListAsString());
 
         // 3. zwracamy rozmiar listy
 
-        logger.error("size {}", (myList.getListSize()));
-
-
+        logger.info("{}", (myList.getListSize()));
 
         // 4. usuwamy element z listy
+
+        myList.remove("niedziela");
+        myList.remove("poniedziałek");
+        logger.info(myList.returnListAsString());
+        logger.info("{}", (myList.getListSize()));
+
+        // 5. wyswietlamy first i last
+
+        logger.info("{}", myList.showFirstAndLast());
+
     }
 }

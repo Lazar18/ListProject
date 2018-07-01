@@ -1,3 +1,5 @@
+package listExample;
+
 public class MyElement {
     private String myString;
     private MyElement nextElement;
