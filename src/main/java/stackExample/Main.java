@@ -31,6 +31,7 @@ public class Main {
 //        logger.info("{}", myStack.pop().getContent());
 
         logger.info(myStack.getAllElementOfStack());
+        logger.info("{}", myStack.size());
 
         logger.info("END");
     }

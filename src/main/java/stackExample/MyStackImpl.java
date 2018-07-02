@@ -25,8 +25,7 @@ public class MyStackImpl implements MyStack {
 
     @Override
     public int size() {
-        int size;
-        return 0;
+        return size;
     }
 
     @Override
